@@ -1,0 +1,109 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: white;
+  color: black;
+  overflow-x: hidden;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Logo */
+.logo, .nav-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  align-items: center;
+}
+
+.nav-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: scale(1.05);
+  background: #ddd;
+}
+
+/* Pages */
+.page {
+  padding: 20px;
+  min-height: calc(100vh - 60px);
+  transition: opacity 0.5s ease;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+/* Inputs */
+input, textarea, select {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+/* Portfolio cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
